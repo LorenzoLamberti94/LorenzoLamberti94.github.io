@@ -10,21 +10,9 @@ main:
     weight: 10
   - name: Papers
     identifier: d9f0a5cc
-    url: /#papers
+    url: /publications/
     weight: 20
-  - name: Talks
-    identifier: d64180b4
-    url: /#talks
-    weight: 30
-  - name: News
-    identifier: e2235b37
-    url: /#news
-    weight: 40
-  - name: Experience
+  - name: CV
     identifier: 4702c7f4
-    url: experience/
-    weight: 50
-  - name: Projects
-    identifier: c6e6920a
-    url: projects/
-    weight: 60
+    url: /cv/
+    weight: 30

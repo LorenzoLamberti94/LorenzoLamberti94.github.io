@@ -37,17 +37,19 @@ sections:
       columns: "1"
     ce: "section-4854bbfc"
     As: "section-c61e1c0d"
-  - block: "collection"
-    id: papers
-    content:
-      title: "Featured Publications"
-      filters:
-        folders:
-          - "publications"
-        featured_only: true
-    design:
-      view: "article-grid"
-      columns: 2
+
+  # - block: "collection"
+  #   id: papers
+  #   content:
+  #     title: "Featured Publications"
+  #     filters:
+  #       folders:
+  #         - "publications"
+  #       featured_only: true
+  #   design:
+  #     view: "article-grid"
+  #     columns: 2
+
   - block: "collection"
     content:
       title: "Recent Publications"
@@ -60,32 +62,34 @@ sections:
       view: "citation"
     ce: "section-4c38bafb"
     As: "section-e18030e4"
-  - block: "collection"
-    id: talks
-    content:
-      title: "Recent & Upcoming Talks"
-      filters:
-        folders:
-          - "events"
-    design:
-      view: "card"
-  - block: "collection"
-    id: news
-    content:
-      title: "Recent News"
-      text: ""
-      page_type: blog
-      count: 10
-      filters:
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-      order: desc
-    design:
-      view: "card"
-      spacing:
-        padding: [0, 0, 0, 0]
+
+  # - block: "collection"
+  #   id: talks
+  #   content:
+  #     title: "Recent & Upcoming Talks"
+  #     filters:
+  #       folders:
+  #         - "events"
+  #   design:
+  #     view: "card"
+
+  # - block: "collection"
+  #   id: news
+  #   content:
+  #     title: "Recent News"
+  #     text: ""
+  #     page_type: blog
+  #     count: 10
+  #     filters:
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #     order: desc
+  #   design:
+  #     view: "card"
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
 ---
