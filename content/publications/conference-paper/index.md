@@ -1,22 +1,24 @@
 ---
-title: 'An example conference paper'
+title: 'TinyDEVO: Deep Event-based Visual Odometry on Ultra-low-power Multi-core Microcontrollers'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - me
-  - Robert Ford
+  - Alessandro Marchei
+  - lorenzo-lamberti
+  - Daniele Palossi
+  - Luca Benini
 
 # Author notes (optional)
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
+date: '2016-06-01T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+# publishDate: '2017-01-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -25,12 +27,12 @@ publication_types: ['paper-conference']
 
 # Publication metadata — structured fields used by citation styles and BibTeX export.
 publication:
-  name: "Proceedings of the HugoBlox Kit Conference"
-  short_name: "ICW"
+  name: "Embedded Vision Workshop 2026 In Conjunction With CVPR/ICCV"
+  short_name: "EVW CVPR2026"
 
 peer_reviewed: true
 open_access: true
-license: CC-BY-4.0
+# license: CC-BY-4.0
 
 # Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
 awards:
@@ -42,26 +44,24 @@ awards:
 
 # Funders and grants. Required by many funders for compliance reporting.
 funding:
-  - funder: "National Science Foundation"
-    grant: "NSF-2401234"
-  - funder: "European Research Council"
-    grant: "ERC-StG-101234"
+  - funder: "SNSF Robomix2 project"
+    grant: "10004854"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: A key task in embedded vision is visual odometry (VO), which estimates camera motion from visual sensors, and it is a core component in many embedded power-constrained systems, from autonomous robots to augmented and virtual reality wearable devices. The newest class of VO systems combines deep learning models with bio-inspired event-based cameras, which are robust to motion blur and lighting conditions. However, state-of-the-art (SoA) event-based VO algorithms require significant memory and computation. For example, the leading approach DEVO requires 733 MB of memory and 155 billion multiply-accumulate (MAC) operations per frame. We present TinyDEVO, an event-based VO deep learning model designed for resource-constrained microcontroller units (MCUs). We deploy TinyDEVO on an ultra-low-power (ULP) 9-core RISC-V-based MCU, achieving a throughput of approximately 1.2 frames per second with an average power consumption of only 86 mW. Thanks to our neural network architectural optimizations and hyperparameter tuning, TinyDEVO reduces the memory footprint by 11.5x (to 63.8 MB) and the number of operations per frame by 29.7x (to 5.2 billion MACs per frame) compared to DEVO, while maintaining an average trajectory error of 27 cm, i.e., only 19 cm higher than DEVO, on three state-of-the-art datasets. Our work demonstrates, for the first time, the feasibility of an event-based VO pipeline on ultra-low-power devices.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags:
-  - Large Language Models
+# tags:
+#   - Large Language Models
 
 # Display this page in the Featured widget?
 featured: true
 
 # Standard identifiers for auto-linking
-hugoblox:
-  ids:
-    doi: 10.5555/123456
+# hugoblox:
+#   ids:
+#     doi: 10.5555/123456
 
 # Custom links
 links:
@@ -80,18 +80,18 @@ links:
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
-  preview_only: false
+# image:
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+#   focal_point: ''
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/projects/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - example
+# projects:
+#   - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -101,10 +101,10 @@ projects:
 slides: ""
 ---
 
-> [!NOTE]
+<!-- > [!NOTE]
 > Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 
 > [!NOTE]
-> Create your slides in Markdown - click the _Slides_ button to check out the example.
+> Create your slides in Markdown - click the _Slides_ button to check out the example. -->
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+<!-- Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
