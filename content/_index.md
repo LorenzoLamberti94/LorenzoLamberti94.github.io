@@ -46,7 +46,7 @@ sections:
           - "publications"
         exclude_featured: false
     design:
-      view: "citation"
+      view: "compact"
     ce: "section-4c38bafb"
     As: "section-e18030e4"
   - block: "collection"
