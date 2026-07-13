@@ -2,7 +2,7 @@ schema: "hugoblox/author/v1"
 slug: "lorenzo-lamberti"
 is_owner: true
 name:
-  display: "Dr. Lorenzo Lamberti"
+  display: "Lorenzo Lamberti"
   given: "Lorenzo "
   family: "Lamberti"
   alternate: ""
@@ -29,7 +29,7 @@ links:
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?user=Ao6WHDgAAAAJ"
   - icon: "academicons/orcid"
-    url: "https://orcid.org/0000-0002-1825-0097"
+    url: "https://orcid.org/0000-0003-1659-618X"
 interests:
   - "Robotics"
   - "Artificial intelligence"
@@ -92,3 +92,5 @@ awards:
 ids:
   orcid: "0000-0003-1659-618X"
   google_scholar: "Ao6WHDgAAAAJ"
+  scopus: "25023889400"
+  arxiv: "lamberti_l_1"
