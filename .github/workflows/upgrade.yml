@@ -44,7 +44,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          package_json_path: ./package.json
+          package_json_file: ./package.json
           run_install: false
 
       - name: Setup Go
@@ -75,6 +75,8 @@ jobs:
 
 
       - name: Create Pull Request
+        id: create_pr
+        continue-on-error: true
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -96,3 +98,9 @@ jobs:
           labels: |
             dependencies
             automated-pr
+
+      - name: Notice when PR creation is blocked
+        if: steps.create_pr.outcome == 'failure'
+        run: |
+          echo "::warning::Upgrade branch was pushed, but automated PR creation is not allowed for this repository. Create it manually at:"
+          echo "::warning::https://github.com/${{ github.repository }}/compare/main...chore/upgrade-hugoblox-${{ github.run_id }}?expand=1"
